@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	cursor: none;
+}
+
+.section {
+	width: 100%;
+	min-height: 100vh;
+}
+
+.main-color {
+	background-color: rgb(0, 19, 29);
+}
+
+.secondary-color {
+	background-color: rgb(0, 30, 46);
+}
+
+.black-color {
+	background-color: rgb(0, 8, 13);
+}
+
+.cursor {
+	position: fixed;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	border-radius: 50%;
+}
+
+.cursor-inner {
+	margin-left: 2px;
+	margin-top: 2px;
+	width: 6px;
+	height: 6px;
+	z-index: 10000001;
+	background-color: #75dab4;
+	-webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+		margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	-o-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+		margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+		margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cursor-outer {
+	margin-left: -15px;
+	margin-top: -15px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #75dab4;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 10000000;
+	opacity: 0.5;
+	-webkit-transition: all 0.08s ease-out;
+	-o-transition: all 0.08s ease-out;
+	transition: all 0.08s ease-out;
+}
